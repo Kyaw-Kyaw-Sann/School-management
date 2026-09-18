@@ -1,0 +1,1 @@
+document.querySelector("#prepare-button").addEventListener("click", () => { document.querySelector("#timetable-title").textContent = "Second Year CS Timetable"; const lesson=document.querySelector("#monday-second"); lesson.textContent="J2EE"; lesson.classList.add("updated"); });

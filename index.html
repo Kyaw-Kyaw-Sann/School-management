@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A front-end school management demonstration project.">
+    <title>School Management Demo</title>
+    <link rel="stylesheet" href="jsProject.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="panel activities-panel" aria-labelledby="page-title">
+        <header class="panel-header"><div><p class="eyebrow">School Management</p><h1 id="page-title">Second Year Activities</h1></div><time id="current-time" aria-live="polite"></time></header>
+        <div class="table-wrap"><table><caption class="sr-only">Second year school activities</caption><thead><tr><th>No.</th><th>Activity</th><th>Administrator</th><th>Started</th><th>Action</th><th>Description</th></tr></thead><tbody>
+          <tr><td>1</td><td><strong>Time Table</strong></td><td><img src="c1.jfif" alt="Mr Collins">Mr Collins</td><td>25 Dec, 2023</td><td><a class="button button-green" href="TimeTable.html">View timetable</a></td><td>View the weekly subjects and learning times.</td></tr>
+          <tr><td>2</td><td><strong>Roll Call</strong></td><td><img src="c7.jfif" alt="Mrs Sean">Mrs Sean</td><td>14 Jan, 2024</td><td><button class="button button-red" type="button" data-action="rollcall">Take roll call</button></td><td>Record students who attended class today.</td></tr>
+          <tr><td>3</td><td><strong>Books in Library</strong></td><td><img src="c4.jfif" alt="Mr Daniel">Mr Daniel</td><td>11 Feb, 2024</td><td><button class="button button-blue" type="button" data-action="books">Borrow book</button></td><td>Check the available books in the library.</td></tr>
+          <tr><td>4</td><td><strong>Exam Results</strong></td><td><img src="c3.jfif" alt="Mrs Joanna">Mrs Joanna</td><td>23 Mar, 2024</td><td><button class="button button-amber" type="button" data-action="results">See results</button></td><td>Review marks and the highest-scoring student.</td></tr>
+          <tr><td>5</td><td><strong>Login Account</strong></td><td><img src="c5.jfif" alt="Mr Christine">Mr Christine</td><td>5 Jan, 2024</td><td><button class="button button-red" type="button" data-action="login">Log in</button></td><td>Demonstration account login.</td></tr>
+          <tr><td>6</td><td><strong>Accounts</strong></td><td><img src="c2.jpg" alt="Mrs Shirley">Mrs Shirley</td><td>23 Dec, 2023</td><td><button class="button button-green" type="button" data-action="dockets">See dockets</button></td><td>Course payment and account information.</td></tr>
+        </tbody></table></div>
+      </section>
+      <section id="workspace" class="panel workspace" aria-live="polite"><div class="empty-state"><h2>Choose an activity</h2><p>Select an action above to work with the demonstration data.</p></div></section>
+    </main>
+  </body>
+</html>

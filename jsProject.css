@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    background: url(finalBackground.jpg) center / cover;
+    justify-content: center;
+    align-items: center;
+}
+div.table,#table1{
+   width: 82vw;
+   height: 90vh;
+   background-color: #fff5;
+   backdrop-filter: blur(7px);
+   box-shadow: 0 .4rem .8rem #0005;
+   border-radius: .8rem;
+   
+}
+.listCSS{
+    color: whitesmoke;
+    font-size: 25px;
+    font-size: large;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.table__header,#table__header1{
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 32px;
+}
+#d1{
+    font-size: 20px;
+}
+.table__body,#rcTbody{
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+    margin: .8rem auto;
+    border-radius: .6rem;
+    overflow: auto;
+}
+.table__body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.table__body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+.table__body:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+table{
+    width: 100%;
+}
+td img{
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+table, th, td{
+    padding: 1rem;
+    border-collapse: collapse;
+    text-align: left;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+}
+tbody tr:nth-child(even){
+    background-color: #0000000b;
+}
+tbody tr:hover{
+    background-color: #fff6;
+}
+
+.status{
+    padding: .4rem 0;
+    border-radius: 2rem;
+    text-align: center;
+}
+.status.delivered{
+   height: 25px;
+   color: #00b327;
+   background:  #86e49d;
+   padding: 3px 30px;
+   border: none;
+   border-radius: 20px;
+   transition: .4s ease;
+   cursor: pointer;
+   font-size: 16px;
+   border: 1px solid #00b327;
+   text-decoration: none;
+}
+.status.delivered:hover{
+    background: none;
+}
+
+.status.cancelled{
+    height: 25px;
+   color: #b30021;
+   background:  #d893a3;
+   padding: 3px 30px;
+   border: none;
+   border-radius: 20px;
+   transition: .4s ease;
+   cursor: pointer;
+   font-size: 16px;
+   border: 1px solid #b30021;
+}
+.status.cancelled:hover{
+    background: none;
+}
+.status.pending{
+    height: 25px;
+   color: black;
+   background:  #ebc474;
+   padding: 3px 30px;
+   border: none;
+   border-radius: 20px;
+   transition: .4s ease;
+   cursor: pointer;
+   font-size: 16px;
+   border: 1px solid black;
+}
+.status.pending:hover{
+    background: none;
+}
+.status.shipped{
+    height: 25px;
+   color: rgba(220, 20, 60, 0.822);
+   background:  #6fcaea;
+   padding: 3px 30px;
+   border: none;
+   border-radius: 20px;
+   transition: .4s ease;
+   cursor: pointer;
+   font-size: 16px;
+   border: 1px solid rgba(220, 20, 60, 0.822);
+}
+.status.shipped:hover{
+    background: none;
+}
+
+@media (max-width: 1000px){
+    td:not(:first-of-type){
+        min-width: 12.1rem;
+    }
+}
+
+/* GitHub Pages dashboard */
+:root { --ink:#1d2734; --glass:rgba(255,255,255,.76); --line:rgba(31,52,75,.14); }
+.page-shell { width:min(1180px,94vw); margin:0 auto; padding:40px 0; display:grid; gap:24px; }
+.page-shell .panel { overflow:hidden; background:var(--glass); border:1px solid rgba(255,255,255,.55); border-radius:16px; box-shadow:0 12px 35px rgba(0,0,0,.18); backdrop-filter:blur(8px); }
+.page-shell .panel-header { min-height:104px; padding:22px 28px; display:flex; align-items:center; justify-content:space-between; gap:20px; background:rgba(255,255,255,.38); }
+.page-shell .eyebrow { margin:0 0 3px; color:#38607b; font-size:.78rem; font-weight:bold; letter-spacing:.1em; text-transform:uppercase; }
+.page-shell h1,.page-shell h2 { margin-top:0; }.page-shell h1 { margin-bottom:0; font-size:clamp(1.4rem,3vw,2rem); }.page-shell #current-time { font-size:16px; font-weight:bold; text-align:right; }
+.page-shell .table-wrap { overflow-x:auto; padding:13px 18px 20px; }.page-shell table { width:100%; min-width:880px; }.page-shell th,.page-shell td { padding:14px 12px; border-bottom:1px solid var(--line); vertical-align:middle; }.page-shell th { background:#e3e4ee; font-size:.85rem; text-transform:uppercase; letter-spacing:.04em; }.page-shell tbody tr:hover { background:rgba(255,255,255,.48); }
+.page-shell .button { display:inline-block; min-height:34px; padding:6px 15px; border:1px solid currentColor; border-radius:999px; cursor:pointer; font-weight:bold; text-decoration:none; transition:.2s ease; }.page-shell .button:hover,.page-shell .button:focus-visible { background:transparent; transform:translateY(-1px); outline:2px solid currentColor; outline-offset:2px; }.page-shell .button-green { color:#08752b; background:#9ce6ad; }.page-shell .button-red { color:#9f1735; background:#efb0bd; }.page-shell .button-blue { color:#075d7f; background:#a8def0; }.page-shell .button-amber { color:#5f4300; background:#f2d28b; }
+.page-shell .workspace { min-height:170px; padding:25px 28px; }.page-shell .empty-state { text-align:center; padding:20px; }.page-shell .empty-state h2 { margin-bottom:5px; }.page-shell .workspace-header { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:18px; }.page-shell .workspace-header h2 { margin:0; }.page-shell .form-row { display:flex; flex-wrap:wrap; gap:10px; align-items:end; }.page-shell label { display:grid; gap:5px; font-weight:bold; }.page-shell input,.page-shell select { min-height:38px; padding:7px 9px; border:1px solid #8ba0b0; border-radius:7px; background:#fff; }.page-shell .message { margin:16px 0 0; padding:10px 12px; border-radius:8px; background:#e4f1e6; }.page-shell .message.error { background:#f8dce1; }.page-shell .result-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(205px,1fr)); gap:14px; }.page-shell .result-card { padding:14px; background:rgba(255,255,255,.55); border-radius:10px; }.page-shell .result-card p { margin:3px 0 0; }.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+@media (max-width:650px) { .page-shell { width:min(94vw,1180px); padding:20px 0; }.page-shell .panel-header { align-items:flex-start; flex-direction:column; }.page-shell #current-time { text-align:left; }.page-shell .workspace { padding:20px; } }
